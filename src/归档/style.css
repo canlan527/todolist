@@ -1,0 +1,51 @@
+.input {
+  width:300px;
+  font-size: 22px;
+}
+.btn {
+  width: 120px;
+  height:36px;
+  background-color: rgb(205, 205, 255);
+  color: #333;
+  margin-left:12px;
+}
+.show {
+  opacity: 1;
+  /* transition: all 1s ease-in; */
+  animation: showitem 12s ease-in forwards;
+}
+.hide {
+  opacity: 0;
+  /* transition: all 1s ease-in; */
+  animation: hideitem 2s ease-in forwards;
+}
+
+@keyframes showitem {
+  0% {
+    color: red;
+    opacity: 0;
+  }
+  50% {
+    color: green;
+    opacity: 0.5;
+  }
+  100% {
+    color: blue;
+    opacity: 1
+  }
+}
+
+@keyframes hideitem {
+  0% {
+    opacity: 1;
+    color:aqua
+  }
+  50%{
+    opacity: 0.5;
+    color:tan;
+  }
+  100% {
+    opacity: 0;
+    color:pink;
+  }
+}
